@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @city.name %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @city.lat %>
+</p>
+
+<p>
+  <strong>Lon:</strong>
+  <%= @city.lon %>
+</p>
+<% day = Date.current %>
+<%  @forecast.daily.data.each_with_index do |fc, idx| %>
+<h4> <%= day + idx.days %> </h4>
+<p>Max Temp: <%= fc.temperatureMax %> </p>
+<p>Chance of rain: <%= fc.precipProbability * 100 %>%</p>
+
+<% end %>
+
+<%= link_to 'Edit', edit_city_path(@city) %> |
+<%= link_to 'Back', cities_path %>
