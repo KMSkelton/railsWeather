@@ -5,7 +5,7 @@ This is based on the FairWeatherHikers AngularJS app. Like FWH, railsWeather que
 #Install
 * ensure that Rails, SQLite and Ruby are installed
 * clone this git repo
-* from the directory where you cloned the repo change directory to weatherApp and type ```rake db:seed``` then ```rake db:migrate```
+* from the directory where you cloned the repo change directory to weatherApp and type ```rake db:migrate``` then ```rake db:seed```
 * on the same command line type ```rails server```
 * open your browser and navigate to ```localhost:3000```
 

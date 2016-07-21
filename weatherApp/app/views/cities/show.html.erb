@@ -17,7 +17,7 @@
 <% day = Date.current %>
 <%  @forecast.daily.data.each_with_index do |fc, idx| %>
 <h4> <%= day + idx.days %> </h4>
-<p>Max Temp: <%= fc.temperatureMax %> </p>
+<p>Max Temp: <%= fc.temperatureMax %>&#176 F </p>
 <p>Chance of rain: <%= fc.precipProbability * 100 %>%</p>
 
 <% end %>
